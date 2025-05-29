@@ -71,13 +71,6 @@ O banco contém diversas tabelas inter-relacionadas para modelar as entidades de
 - Algumas tabelas incluem **atributos compostos** e **chaves estrangeiras** para assegurar integridade referencial.
 - Atenção com permissões no PostgreSQL para permitir uso do `pg_read_binary_file`.
 
-## 🚀 Possíveis Melhorias Futuras
-
-- Implementar **procedures e triggers** para automatizar certas validações ou cálculos.
-- Criar **views** para simplificar consultas frequentes (ex.: visão consolidada de personagens).
-- Implementar **restrições adicionais** como `CHECK` ou `UNIQUE` onde pertinente.
-- Desenvolvimento de uma **interface gráfica** para manipulação dos dados do VTT.
-
 ## 👨‍💻 Autor
 
 Projeto desenvolvido por **Willian dos Santos Ribas**.
