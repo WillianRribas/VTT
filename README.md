@@ -1,17 +1,17 @@
 
-# 🎲 Sistema de Banco de Dados - VTT (Virtual Tabletop)
+# Sistema de Banco de Dados - VTT (Virtual Tabletop)
 
-## 📖 Descrição
+## Descrição
 
 Este projeto consiste no desenvolvimento de um banco de dados relacional para um sistema de **VTT (Virtual Tabletop)**, focado na realização de sessões de **RPG de mesa** de forma online. A modelagem foi construída para abranger os principais elementos de uma sessão de RPG: personagens, mestres, raças, classes, habilidades, mapas, sistemas de jogo, entre outros.
 
 O objetivo é fornecer uma estrutura robusta que permita gerenciar partidas, criar e controlar personagens, registrar ações como rolagem de dados e envio de mensagens, além de armazenar imagens associadas a personagens e mapas.
 
-## 🗂️ Estrutura do Banco de Dados
+## 🗂Estrutura do Banco de Dados
 
 O banco contém diversas tabelas inter-relacionadas para modelar as entidades de um VTT, conforme descrito a seguir:
 
-### ✅ Principais Entidades:
+### Principais Entidades:
 
 - **Conta:** Cadastro de usuários, com informações pessoais, foto e último acesso.
 - **Raça:** Descrição das raças disponíveis para personagens e inimigos.
@@ -28,21 +28,21 @@ O banco contém diversas tabelas inter-relacionadas para modelar as entidades de
 - **Chat:** Modela a funcionalidade de bate-papo dentro do VTT.
 - **EnviarMensagem:** Registro de mensagens enviadas pelos personagens nos chats.
 
-## ⚙️ Recursos Implementados
+## Recursos Implementados
 
 - **Criação de todas as tabelas** com atributos adequados e tipos de dados relevantes, incluindo uso de **bytea** para armazenar imagens.
 - **Relacionamentos entre tabelas** para refletir a complexidade e as interdependências do sistema.
 - **Script de inserção** com **mínimo de 5 registros por tabela**, com dados descritivos e realistas.
 - Uso de **`pg_read_binary_file`** para inserir imagens como binários diretamente no banco.
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Banco de Dados:** PostgreSQL
 - **Script SQL:** Criação e inserção de dados
 - **Tipos Especiais:** bytea para imagens
 - **Funcionalidades Avançadas:** uso de `pg_read_binary_file` para inserir imagens
 
-## ▶️ Como Executar
+## Como Executar
 
 1. **Pré-requisitos:**
    - PostgreSQL instalado e configurado.
@@ -64,13 +64,13 @@ O banco contém diversas tabelas inter-relacionadas para modelar as entidades de
 
    - Certifique-se de que o arquivo `imagem.jpg` esteja acessível pelo servidor PostgreSQL, pois o script usa `pg_read_binary_file('imagem.jpg')`.
 
-## 📝 Observações
+## Observações
 
 - A modelagem considera a complexidade típica de sistemas VTT.
 - O script está preparado para trabalhar com **dados binários** para representar imagens.
 - Algumas tabelas incluem **atributos compostos** e **chaves estrangeiras** para assegurar integridade referencial.
 - Atenção com permissões no PostgreSQL para permitir uso do `pg_read_binary_file`.
 
-## 👨‍💻 Autor
+## Autor
 
 Projeto desenvolvido por **Willian dos Santos Ribas**.
