@@ -7,7 +7,7 @@ Este projeto consiste no desenvolvimento de um banco de dados relacional para um
 
 O objetivo é fornecer uma estrutura robusta que permita gerenciar partidas, criar e controlar personagens, registrar ações como rolagem de dados e envio de mensagens, além de armazenar imagens associadas a personagens e mapas.
 
-## 🗂Estrutura do Banco de Dados
+## Estrutura do Banco de Dados
 
 O banco contém diversas tabelas inter-relacionadas para modelar as entidades de um VTT, conforme descrito a seguir:
 
